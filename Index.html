@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="styles/styles.css">
+		<script src="styles/script.js" defer></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<title>Timioss Creatives</title>
+		
+		<style>
+			
+			.swiper-container {
+				  width: 100%;
+				  padding-top: 50px;
+				  padding-bottom: 50px;
+			}
+
+			.swiper-slide {
+				  background-position: center;
+				  background-size: cover;
+				  width: 400px;
+				  height: 400px;
+				  background-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="navbarMenu" style="position: fixed; overflow: hidden; width: 100%;">
+		<nav  class="navbar">
+			<div class="brand-title">Timioss Creatives</div>
+			
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			
+			<div class="navbar-links">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#Clients">Clients</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#Contacts">Contacts</a></li>
+				</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<div class="home">
+				<img src="public/images/Sketch001.jpg" style="width: 100%">
+		</div>
+		
+		<section id="Services">
+			<div class="container">
+				<div class="title">
+					<h1>Services</h1>
+					<p>These are the services we provide</p>
+					<hr/>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="card text center">
+							<img src="public/images/services_marketing.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Branding and Digital Marketing</h5>
+								<p class="card-text"></p>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card text center">
+							<img src="public/images/services_audio_video.jpg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Audio and Video</h5>
+								<p class="card-text"></p>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card text center">
+							<img src="public/images/services_motion.jpeg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Motion Graphics</h5>
+								<p class="card-text"></p>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card text center">
+							<img src="public/images/services_motion.jpeg" class="card-img-top">
+							<div class="card-body">
+								<h5 class="card-title">Motion Graphics</h5>
+								<p class="card-text"></p>
+								<a href="#"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- <div class="portfolio">
+			<div class="backgroundImg">
+				<div class="title">
+					<h1>Our Works </h1>
+					<p> Our team of creative professionals excel in storytelling through creative designs, effective
+						content planning & creative direction. </p>
+				</div>
+				<h1 style="color:red;">this section will show portfolio</h1>
+				<h5>Everyone will publish their work!</h5>
+			</div>
+			<div class="overlay">
+			</div>
+		</div> -->
+		
+		<!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Our Work</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Photos</li>
+              <li data-filter=".filter-card">Videos</li>
+              <li data-filter=".filter-web">Events</li>
+              <li data-filter=".filter-web">Press Release</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Photo 1</a></h4>
+                <p>Photo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Event 1</a></h4>
+                <p>Event</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Photo 2</a></h4>
+                <p>Photo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Video 1</a></h4>
+                <p>Video</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Video 2</a></h4>
+                <p>Video</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Event 2</a></h4>
+                <p>Event</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Photo 3</a></h4>
+                <p>Photo</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Event 3</a></h4>
+                <p>Event</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="#">Event 4</a></h4>
+                <p>Event</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+		
+		<section id="about">
+			<div class="about-title">
+					<h1>Who We Are?</h1>
+					<p>The Best Team In the World!!!</p>
+					<hr/>
+			</div>
+			<!-- Swiper -->
+			  <div class="swiper-container">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide"><img src="public/images/aninda.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/ruhul_bhai.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/mahir.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/polin.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/raiiyan.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/rafi.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/ashraful.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/ikra.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/fardina.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/lamia.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/jubair.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/tasnimul.jpg"></div>
+				  <div class="swiper-slide"><img src="public/images/farhan.jpg"></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			  </div>
+		</section>
+		
+		<div class="footer-class">
+
+		  <div class="container text-center text-md-left">
+
+			<div class="row">
+
+			  <div class="col-md-4 mx-auto">
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+				<p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+				  consectetur
+				  adipisicing elit.</p>
+
+			  </div>
+		
+
+			  <hr class="clearfix w-100 d-md-none">
+			  <div class="col-md-2 mx-auto">
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+				<ul class="list-unstyled">
+				  <li>
+					<a href="#!">Link 1</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 2</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 3</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 4</a>
+				  </li>
+				</ul>
+
+			  </div>
+
+			  <hr class="clearfix w-100 d-md-none">
+			  <div class="col-md-2 mx-auto">
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+				<ul class="list-unstyled">
+				  <li>
+					<a href="#!">Link 1</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 2</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 3</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 4</a>
+				  </li>
+				</ul>
+
+			  </div>
+
+			  <hr class="clearfix w-100 d-md-none">
+			  <div class="col-md-2 mx-auto">
+				<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+				<ul class="list-unstyled">
+				  <li>
+					<a href="#!">Link 1</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 2</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 3</a>
+				  </li>
+				  <li>
+					<a href="#!">Link 4</a>
+				  </li>
+				</ul>
+
+			  </div>
+
+
+			</div>
+
+
+		  </div>
+		  <!-- Footer Links -->
+
+		  <hr>
+
+		  <!-- Social buttons -->
+			<div class="col-md-3 mx-auto">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-instagram"></a>
+			</div>
+
+		</div>
+		
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  effect: 'coverflow',
+			  grabCursor: true,
+			  centeredSlides: true,
+			  slidesPerView: 'auto',
+			  coverflowEffect: {
+				rotate: 50,
+				stretch: 0,
+				depth: 100,
+				modifier: 1,
+				slideShadows: true,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+			  },
+			});
+		</script>
+	</body>
+</html>

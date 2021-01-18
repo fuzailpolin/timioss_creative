@@ -1,0 +1,531 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+.brand-title {
+	font-family: 'Castellar';
+	font-size: 1.5rem;
+	margin: .5rem;
+	font-weight:700;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a {
+	text-decoration: none;
+	font-family: 'Copperplate Gothic Bold';
+	color: white;
+	font-size: 18px;
+	font-weight:700;
+	padding: 1rem;
+	display: block;
+	
+}
+
+.navbar-links li:hover {
+	background-color: #666367 ;
+}
+
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+	
+}
+
+@media (max-width: 600px) {
+	.toggle-button {
+		display: flex;
+	}
+	
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+	
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+		
+	}
+	
+	.navbar-links li {
+		text-align: center;
+	}
+	
+	.navbar-links li a {
+		padding: .5rem 1rem;
+	}
+	
+	.navbar-links.active {
+		display: flex;
+	}
+}
+
+
+/* Portfolio Section
+--------------------------------*/
+
+#portfolio {
+  padding: 60px 0;
+}
+
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+  background: #701C7F;
+  color: #fff;
+}
+
+#portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#portfolio .portfolio-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#portfolio .portfolio-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfolio .portfolio-item figure .link-preview,
+#portfolio .portfolio-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+#portfolio .portfolio-item figure .link-preview i,
+#portfolio .portfolio-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+
+#portfolio .portfolio-item figure .link-preview:hover,
+#portfolio .portfolio-item figure .link-details:hover {
+  background: #701C7F;
+}
+
+#portfolio .portfolio-item figure .link-preview:hover i,
+#portfolio .portfolio-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#portfolio .portfolio-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfolio .portfolio-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#portfolio .portfolio-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#portfolio .portfolio-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#portfolio .portfolio-item .portfolio-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+#portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-info h4 a {
+  color: #333;
+}
+
+#portfolio .portfolio-item .portfolio-info h4 a:hover {
+  color: #701C7F;
+}
+
+#portfolio .portfolio-item .portfolio-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* Clients Section
+--------------------------------*/
+
+#clients {
+  padding: 60px 0;
+}
+
+#clients img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients img:hover {
+  opacity: 1;
+}
+
+#clients .owl-nav,
+#clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#clients .owl-dot.active {
+  background-color: #701C7F;
+
+#Services {
+	
+	padding: 30px 0px;
+	background-image: url(../public/images/bgImg.jpg);
+}
+
+#Services h1 {
+	font-family: 'Algerian';
+	font-weight: 900;
+	font-size: 34px;
+	padding-bottom: 5px;
+}
+
+
+.title {
+	text-align: center;
+	padding: 25px 0px;
+}
+
+.title p {
+	font-family: 'verdana', sans-serif;
+	font-weight: 500;
+	color: black;
+	font-size: 18px;
+}
+
+.card-body {
+	box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
+}
+
+.card {
+	margin: 20px 10px;
+}
+
+.card-body a {
+	color: black;
+	text-decoration: none;
+	font-size: 15px;
+	margin-top: auto;
+	font-weight: 600;
+}
+
+.card-body a:hover {
+	color: #63a6b0;
+	text-decoration: none;
+}
+
+#about {
+	background-color: #000 ;
+	padding: 30px 0px;
+}
+
+#about h1 {
+	font-family: 'Algerian';
+	font-weight: 900;
+	font-size: 34px;
+	padding-bottom: 5px;
+	color: white;
+}
+
+.about-title{
+	text-align: center;
+	padding: 25px 0px;
+}
+
+.about-title p {
+	font-family: 'verdana', sans-serif;
+	font-weight: 500;
+	color: white;
+	font-size: 18px;
+}
+
+.backgroundImg {
+	background-image: url(../public/images/bg_test3.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 800px;
+}
+
+.backgroundImg > *{
+	position:relative;
+	z-index: 2
+}
+
+.backgroundImg:after {
+	content: '';
+	position:absolute;
+	left: 0; top:0;
+	width:100%; height:100%;
+	background: rgba(220,220,220,.6);
+	z-index: 1;
+}
+
+.backgroundImg h1 {
+	font-family: 'Algerian';
+	font-weight: 900;
+	font-size: 34px;
+	padding-bottom: 5px;
+	color: black;
+}
+
+.backgroundImg p {
+	font-family: 'verdana', sans-serif;
+	font-weight: 500;
+	color: black;
+	font-size: 18px;
+}
+
+
+/*footer*/
+
+.footer-class {
+	padding: 30px 0px;
+	background-color: #2A2A2A;
+	color: white;
+}
+
+/* Social media buttons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
